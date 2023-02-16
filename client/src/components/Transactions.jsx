@@ -50,7 +50,7 @@ const TransactionCard = ({
           {message && (
             <>
               <br />
-              <p className="text-white text-base">Message: ${message} ETH</p>
+              <p className="text-white text-base">Message: {message}</p>
             </>
           )}
         </div>
