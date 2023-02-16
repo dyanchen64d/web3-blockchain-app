@@ -9,7 +9,7 @@ const useFetchGif = ({ keyword }) => {
     try {
       const q = keyword.split(' ').join();
 
-      console.log('fetchGifs q==', q);
+      // console.log('fetchGifs q==', q);
 
       const response = await fetch(
         `https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&q=${q}&limit=1`
