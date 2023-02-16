@@ -15,9 +15,9 @@ const useFetchGif = ({ keyword }) => {
         `https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&q=${q}&limit=1`
       );
 
-      const { data } = await response.join();
+      const { data } = await response.json();
 
-      console.log('fetchGifs data==', data);
+      // console.log('fetchGifs data==', data);
 
       setGifUrl(data[0]?.images?.downsized_medium?.url);
     } catch (error) {
